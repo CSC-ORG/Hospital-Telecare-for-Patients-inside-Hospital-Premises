@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
                 MainActivity.this.finish();
             }
@@ -43,8 +43,5 @@ public class MainActivity extends AppCompatActivity {
         super.onBackPressed();
         android.os.Process.killProcess(android.os.Process.myPid());
     }
-
-
-
 
 }

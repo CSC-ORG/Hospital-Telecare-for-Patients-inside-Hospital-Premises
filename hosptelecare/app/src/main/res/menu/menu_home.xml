@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="b2wdevelopers.com.hosptelecare.MainActivity">
+    <item
+        android:id="@+id/scan"
+        android:orderInCategory="100"
+        android:title="SCAN"
+        app:showAsAction="always|withText" />
+</menu>

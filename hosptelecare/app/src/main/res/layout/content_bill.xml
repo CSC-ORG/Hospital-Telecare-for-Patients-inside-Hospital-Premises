@@ -1,54 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="10"
+    android:padding="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="b2wdevelopers.com.hosptelecare.BillActivity"
-    android:background="#E4F1FE"
-    tools:showIn="@layout/activity_bill">
 
+    tools:showIn="@layout/activity_bill"
+    android:orientation="vertical">
+    <!--android:background="#E4F1FE"-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="8">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        android:id="@+id/listView"/>
+
+</LinearLayout>
     <TextView
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Amount Payable"
-        android:id="@+id/t1"
-        android:textSize="25dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:id="@+id/total"
         android:textColor="#4183D7"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/t2"
-        android:layout_marginBottom="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="250 Rs"
-        android:textSize="50dp"
-        android:textColor="#4183D7"
-        android:id="@+id/t2"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
+        android:text="300"
+        android:layout_weight="1"
+        />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PROCEED TO PAY"
         android:background="#4183D7"
         android:textColor="#E4F1FE"
         android:id="@+id/b1"
-        android:layout_below="@+id/t2"
+        android:layout_weight="1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="91dp" />
+        android:layout_marginTop="5dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Payment Deadline:24/1/2016"
-        android:textColor="#4183D7"
-        android:id="@+id/t3"
-        android:layout_below="@+id/t2"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true" />
 
-</RelativeLayout>
+</LinearLayout>

@@ -23,18 +23,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/doc1"
-            android:text="Doctor's Name"
+            android:id="@+id/pat"
+            android:text="Patient's Name"
             android:textColor="#4183D7"
             android:textSize="20dp" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:inputType="text"
             android:textColor="#4183D7"
-            android:id="@+id/doc2" />
+            android:id="@+id/pat1" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,20 +48,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/diag1"
+            android:id="@+id/doc1"
+            android:text="Doctor's Name"
             android:textColor="#4183D7"
-            android:text="Problem"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:inputType="text"
             android:textColor="#4183D7"
-            android:id="@+id/diag2"
-            />
+            android:id="@+id/doc2" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,9 +84,37 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/feed2"
+            android:inputType="text"
             android:textColor="#4183D7"
             />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingBottom="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/date1"
+            android:textColor="#4183D7"
+            android:text="Date"
+            android:textSize="20dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4183D7"
+            android:layout_weight="1"
+            android:id="@+id/date2"
+            android:text="Set Date"
+            android:onClick="setDate"
+            android:textSize="20dp"
+            />
 
     </LinearLayout>
     <Button
@@ -98,4 +128,5 @@
         android:text="SUBMIT FEEDBACK"
         android:paddingBottom="20dp"
         />
+
 </LinearLayout>

@@ -9,12 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="10">
+        android:weightSum="10"
+        android:padding="3dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="6"
+            android:textSize="17dp"
+            android:textStyle="bold"
             android:textColor="#4183D7"
             android:id="@+id/text1"
             />
@@ -23,6 +26,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
+            android:gravity="right"
+            android:textSize="17dp"
             android:id="@+id/text2"/>
 
     </LinearLayout>
@@ -30,6 +35,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#C0392B"
+        android:textSize="20dp"
         android:id="@+id/text3"
         />
 

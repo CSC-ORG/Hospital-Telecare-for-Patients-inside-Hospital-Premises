@@ -9,4 +9,6 @@
     <string name="google_api_key">AIzaSyCJd7yAvMljYRYjwgwTfCRTAehQFbKwCQU</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_feed">FeedActivity</string>
+    <string name="title_activity_reg">RegActivity</string>
+    <string name="title_activity_capture">Capture</string>
 </resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#E4F1FE"
+    tools:context="com.b2wdevelopers.hospteletemp.AdminActivity"
+    tools:showIn="@layout/activity_admin"
+    android:weightSum="4"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ADD PAYMENT"
+        android:textColor="#E4F1FE"
+        android:background="#4183D7"
+        android:layout_weight="1"
+        android:id="@+id/button3"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:onClick="pay"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ADD MEDICAL RECORDS"
+        android:id="@+id/button"
+        android:layout_margin="10dp"
+        android:textColor="#E4F1FE"
+        android:textSize="20dp"
+        android:onClick="med"
+        android:background="#4183D7"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textColor="#E4F1FE"
+        android:background="#4183D7"
+        android:text="VIEW FEEDBACK"
+        android:id="@+id/button2"
+        android:onClick="feed"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textColor="#E4F1FE"
+        android:background="#4183D7"
+        android:text="VIEW PATIENT DETAILS"
+        android:id="@+id/button4"
+        android:onClick="det"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+
+
+
+</LinearLayout>

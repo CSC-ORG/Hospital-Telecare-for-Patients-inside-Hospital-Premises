@@ -28,8 +28,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mr.Mukesh"
+            android:text="Mr.Anirudh"
             android:textSize="20dp"
+            android:id="@+id/tv"
             android:textColor="#4183D7"
             android:layout_gravity="center"
             android:layout_weight="6"/>
