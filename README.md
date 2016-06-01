@@ -7,8 +7,9 @@ The Application consists of Features such as
 * Hospital Map
 * User Feedback
 * Notification of Doctor Appointment
-* Wi-Fi turned on when a particular QR code is scanned 
+* Wi-Fi turned on when a particular QR code is scanned (Only accepts QR Code with data “CSC” embedded in it)
 
+(csc.png contains the data “CSC” whereas coin.png contains the data “COIN”. WiFi can be turned on by scanning the csc.png. Scanning the coin.png or any other QR codes do not turn on the WiFi)
 The features can be accessed by a user who registers for the application
 
 There is an Admin Panel which allows viewing details of the patients, Feedbacks and also allows updating the medical and payment records.
