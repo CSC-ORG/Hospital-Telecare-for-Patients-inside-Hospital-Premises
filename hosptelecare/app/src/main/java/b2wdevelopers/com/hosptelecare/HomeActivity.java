@@ -72,6 +72,11 @@ ImageView hosp;
                 wifi.setWifiEnabled(true);
 
             }
+             if (resultCode == RESULT_CANCELED) {
+                // Handle cancel
+                Intent i = new Intent(this,HomeActivity.class);
+                startActivity(i);
+                }
 
             Log.d("scanresultcode",resultCode+"");
 
